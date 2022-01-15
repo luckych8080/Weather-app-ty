@@ -18,7 +18,7 @@ const App: FC = () => {
 
   return (
     <div className="has-text-centered">
-      <Search title="Enter city name and press search button" />
+      <Search title="Check Weather" />
       {loading ? <h2 className="is-size-3 py-2">Loading...</h2> : weatherData && <Weather data={weatherData} />}
 
       {alertMsg && <Alert message={alertMsg} onClose={() => dispatch(setAlert(''))} />}
